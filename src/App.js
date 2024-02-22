@@ -6,6 +6,7 @@ import About from "./pages/About";
 import MyProjects from "./pages/MyProjects";
 import Skills from "./pages/Skills";
 import NoPage from "./pages/NoPage";
+import "./App.css";
 
 const App = () => {
   return (
@@ -15,8 +16,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/*" element={<NoPage />} />
         <Route path="/myprojects" element={<MyProjects />} />
+        <Route path="/*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   );

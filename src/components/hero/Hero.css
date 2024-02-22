@@ -1,0 +1,41 @@
+.hero-section {
+  display: flex;
+  padding: 50px 120px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: var(--bg-shade);
+}
+
+.hero-section-content-box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-section-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  color: var(--white);
+  background-color: var(--primary);
+}
+.btn:hover {
+  transform: scale(1.05);
+  color: var(--primary);
+  background-color: var(--white);
+}
+.section-title {
+  color: var(--black);
+  font-size: 21px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-start;
+}
