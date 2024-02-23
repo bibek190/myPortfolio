@@ -1,48 +1,14 @@
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
-:root {
-  --primary: #5e3bee;
-  --heading-color: #282938;
-  --bg-shade: #f5fcff;
-  --black: #000000;
-  --white: #ffffff;
-}
-
-.btn {
-  font-family: "Roboto";
-  display: inline-block;
-  padding: 12px 22px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  cursor: pointer;
-  text-align: center;
   text-decoration: none;
-  border-radius: 4px;
-  transition: 0.5s ease;
+  background: transparent;
 }
-
-/* headings */
-h1 {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 67px;
+body {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+  font-family: "Roboto", sans-serif;
 }
-h2 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 58px;
-}
-h3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 34px;
-}
-/* paragraph */
