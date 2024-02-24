@@ -1,21 +1,31 @@
 .skills {
-  height: 90vh;
+  /* height: 90vh; */
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: -10rem;
   padding: 0 2rem;
 }
 .skillTitle {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
+  position: relative;
+}
+
+.skillTitle::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: -3rem;
+  height: 2px;
+  width: 20rem;
+  background-color: yellow;
 }
 
 .skillDesc {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
   max-width: 60rem;
   line-height: 2rem;
@@ -27,6 +37,7 @@
   justify-content: space-around;
   padding: 2rem;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 .skillBars {
   display: flex;
@@ -36,6 +47,7 @@
   padding: 1rem;
   border-radius: 0.5rem;
   background: rgb(45, 44, 44, 0.5);
+  flex-wrap: wrap;
 }
 .img {
   font-size: 4rem;
