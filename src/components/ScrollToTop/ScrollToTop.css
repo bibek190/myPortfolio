@@ -1,0 +1,25 @@
+.scrollToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.2rem 0.2rem;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollToTop:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.scrollToTop:active {
+  opacity: 1;
+  box-shadow: 0 0 5px 2px yellow;
+}

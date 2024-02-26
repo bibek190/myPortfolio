@@ -24,6 +24,7 @@
   width: auto;
   border-radius: 50%;
   box-shadow: 0 10px 10px 2px yellow;
+  object-fit: cover;
 }
 .about-container {
   display: flex;

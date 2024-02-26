@@ -1,0 +1,29 @@
+.myProjects {
+  height: 60vh;
+}
+
+.myProjects h2 {
+  margin: 5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.project-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-project {
+  background-color: rgb(45, 44, 44, 0.5);
+
+  border-radius: 0.4rem;
+  max-width: 300px;
+}
+.individual-project img {
+  height: 300px;
+  object-fit: cover;
+}
+.project-content {
+  padding: 2px;
+}
