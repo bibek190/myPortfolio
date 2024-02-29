@@ -9,57 +9,57 @@ const MyProjects = () => {
       <h2>My Projects</h2>
       <div className="project-container">
         <div className="project-box ">
-          <img src="./images/project1.jpeg" alt="" />
+          <img src="./images/digital-library.png" alt="" />
           <div className="project-content">
-            <h4>Project1</h4>
+            <h4>Digital Library</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis
               voluptate beatae dolorem commodi. Repellat ut voluptatibus magnam
               at harum.
             </p>
-            <NavLink to="#">
+            <NavLink to="https://github.com/bibek190/Digital-Books-Library">
               <FaExternalLinkAlt />
             </NavLink>
           </div>
         </div>
         <div className="project-box">
-          <img src="./images/project2.jpeg" alt="" />
+          <img src="./images/e-commerce.png" alt="" />
           <div className="project-content">
-            <h4>Project1</h4>
+            <h4>E-commerce</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis
               voluptate beatae dolorem commodi. Repellat ut voluptatibus magnam
               at harum.
             </p>
-            <NavLink to="#">
+            <NavLink to="https://github.com/bibek190/second-ecommerce">
               <FaExternalLinkAlt />
             </NavLink>
           </div>
         </div>
         <div className="project-box">
-          <img src="./images/project3.jpeg" alt="" />
+          <img src="./images/travel-bag.png" alt="" />
           <div className="project-content">
-            <h4>Project1</h4>
+            <h4>Travel list</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis
               voluptate beatae dolorem commodi. Repellat ut voluptatibus magnam
               at harum.
             </p>
-            <NavLink to="#">
+            <NavLink to="https://github.com/bibek190/travel-baggage-list">
               <FaExternalLinkAlt />
             </NavLink>
           </div>
         </div>
         <div className="project-box">
-          <img src="./images/project4.jpeg" alt="" />
+          <img src="./images/movie-search.png" alt="" />
           <div className="project-content">
-            <h4>Project1</h4>
+            <h4>Search Movie</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis
               voluptate beatae dolorem commodi. Repellat ut voluptatibus magnam
               at harum.
             </p>
-            <NavLink to="#">
+            <NavLink to="https://github.com/bibek190/Movie-search-react">
               <FaExternalLinkAlt />
             </NavLink>
           </div>

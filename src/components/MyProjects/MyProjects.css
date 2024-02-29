@@ -3,25 +3,30 @@
   /* background: rgb(80, 81, 81); */
 }
 .myProjects h2 {
+  font-size: 3rem;
   margin-bottom: 4rem;
+  text-align: center;
 }
 .project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 2rem;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 0 4rem;
 }
 .project-box {
   position: relative;
   border-radius: 1.5rem;
   box-shadow: 0 0 1rem rgb(36, 36, 35);
   overflow: hidden;
-  display: flex;
-  max-width: 350px;
-  max-height: 250px;
+  /* display: flex; */
+  width: 350px;
+  height: 250px;
 }
 .project-box img {
   width: 100%;
+  height: 100%;
   transition: 0.5s ease;
 }
 .project-box:hover img {
@@ -34,7 +39,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(255, 215, 0, 0.7));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(255, 215, 0));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,9 +47,11 @@
   gap: 1rem;
   transform: translateY(100%);
   transition: 0.6s ease;
+  opacity: 0;
 }
 .project-box:hover .project-content {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .project-content h4 {
@@ -57,9 +64,10 @@
 .project-content a {
   display: inline-flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1rem;
   border-radius: 50%;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   padding: 0.5rem;
+  border: 2px solid black;
 }
