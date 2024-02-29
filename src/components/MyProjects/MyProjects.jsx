@@ -6,7 +6,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const MyProjects = () => {
   return (
     <section className="myProjects">
-      <h2>My Projects</h2>
+      <h2 className="myProject-title">My Projects</h2>
       <div className="project-container">
         <div className="project-box ">
           <img src="./images/digital-library.png" alt="" />
