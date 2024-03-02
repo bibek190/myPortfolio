@@ -33,6 +33,11 @@
   object-fit: contain;
   height: 40rem;
   border-radius: 50%;
+  transition: 0.5s ease;
+}
+.bg:hover {
+  transform: scale(0.9);
+  box-shadow: -5px 0 0 2px yellow;
 }
 
 .btn {
