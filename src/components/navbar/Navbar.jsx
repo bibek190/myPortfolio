@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,10 +12,18 @@ const Navbar = () => {
         </span>
       </div>
       <div className="desktopMenu">
-        <Link className="desktopMenuListItem">Home</Link>
-        <Link className="desktopMenuListItem">About</Link>
-        <Link className="desktopMenuListItem">Skills</Link>
-        <Link className="desktopMenuListItem">Portfolio</Link>
+        <Link to="/" className="desktopMenuListItem">
+          Home
+        </Link>
+        <Link to="/about" className="desktopMenuListItem">
+          About
+        </Link>
+        <Link to="/skills" className="desktopMenuListItem">
+          Skills
+        </Link>
+        <Link to="/myprojects" className="desktopMenuListItem">
+          Projects
+        </Link>
       </div>
       <div className="desktopMenuBtn">
         <button className="lightDarkMode">
