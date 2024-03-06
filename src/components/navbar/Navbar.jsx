@@ -7,6 +7,7 @@ import DarkMode from "../DarkMode/DarkMode";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -37,25 +38,27 @@ const Navbar = () => {
             Projects
           </Link>
         </li>
-        <FaTimes className="react-icons" />
       </ul>
-      <GiHamburgerMenu className="react-icons" />
+
       <div className="desktopMenuBtn">
         <DarkMode />
         <button className="desktopMenuButton contactLink">
-          <Link to="/contact">
-            Contact
-            <span>
-              <i class="fa-regular fa-message"></i>
-            </span>
+          <Link className="contactLink" to="/contact">
+            Contact Me
           </Link>
         </button>
       </div>
       {/* mobile */}
-      <GiHamburgerMenu
-        className="mobMenu"
-        onClick={() => setShowMenu(!showMenu)}
-      />
+
+      {showMenu ? (
+        <FaTimes className="mobMenu " onClick={() => setShowMenu(!showMenu)} />
+      ) : (
+        <GiHamburgerMenu
+          className="mobMenu"
+          onClick={() => setShowMenu(!showMenu)}
+        />
+      )}
+
       <ul className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
         <li>
           <Link to="/" className="listItem" onClick={() => setShowMenu(false)}>

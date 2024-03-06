@@ -21,6 +21,8 @@ body {
   color: white;
 }
 .light-theme {
-  background: linear-gradient(30deg, gold, #86abe7, #ffffff);
+  /* background: linear-gradient(60deg, #e0d2c7, #739d96); */
+  background: linear-gradient(90deg, #dadab6, #e0d6c8, rgb(119, 106, 71));
+
   color: black;
 }

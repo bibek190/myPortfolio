@@ -21,6 +21,7 @@
   display: flex;
   gap: 0.2rem;
   color: rgb(255, 255, 0);
+  /* color: rgb(227, 80, 11); */
 }
 .logo span {
   font-size: 2rem;
@@ -109,6 +110,15 @@
 }
 .listItem {
   padding: 0 5rem;
+}
+.contactLink {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s ease;
+}
+.contactLink:hover {
+  background-color: gold;
+  transform: scale(1.02);
 }
 
 /* media query */
