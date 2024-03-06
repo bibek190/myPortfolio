@@ -1,6 +1,6 @@
 .contact {
   height: 80vh;
-  background-color: rgb(86, 84, 81);
+  /* background-color: rgb(86, 84, 81); */
 }
 
 .contact {
@@ -9,8 +9,13 @@
   justify-content: center;
   align-items: center;
 }
+hr {
+  width: 60%;
+  border: 1px solid gold;
+}
 .contact-box {
   display: flex;
+  flex-wrap: wrap;
 }
 .contact-left {
   flex-basis: 40%;
@@ -19,15 +24,15 @@
   flex-basis: 60%;
 }
 .contact-left h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .contact-left p {
   margin-top: 3rem;
   font-size: 1.3rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .contact-left span {
   font-size: 2rem;
@@ -36,14 +41,37 @@
 .social-icon a {
   font-size: 2.5rem;
   text-decoration: none;
-  color: gold;
   display: inline-block;
-  margin: 1rem;
+  margin: 1rem 1rem 0 0;
+  transition: 0.5s;
+  color: white;
 }
-.contact-form {
-  display: flex;
-  flex-direction: column;
+
+.social-icon a:hover {
+  color: gold;
+  transform: translateY(-5px);
 }
-input {
-  font-size: 2rem;
+
+.contact-right form {
+  width: 100%;
+}
+form .btn2 {
+  background-color: #ffd700;
+  display: inline-block;
+  border-radius: 5px;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+}
+form textarea {
+  resize: none;
 }

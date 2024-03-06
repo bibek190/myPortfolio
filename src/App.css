@@ -7,7 +7,7 @@
 }
 body {
   background-color: rgb(30, 30, 30);
-  /* background-color: rgb(197, 204, 216); */
+  /* background-color: rgb(187, 189, 190); */
   color: white;
   /* color: black; */
 
@@ -15,4 +15,12 @@ body {
   overflow-y: scroll;
 
   font-family: "Roboto", sans-serif;
+}
+.dark-theme {
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+.light-theme {
+  background: linear-gradient(30deg, gold, #86abe7, #ffffff);
+  color: black;
 }

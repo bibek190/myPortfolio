@@ -1,6 +1,6 @@
 .navbar {
   height: 5rem;
-  /* background-color: rgb(32, 131, 218); */
+  background-color: rgba(48, 47, 47, 0.4);
   width: 100%;
   /* max-width: 85rem; */
   margin: 0 auto;
@@ -27,15 +27,24 @@
   display: flex;
   align-items: end;
 }
-
-.desktopMenuListItem {
+.desktopMenu {
+  display: flex;
+  flex-direction: row;
+}
+.desktopMenu li,
+.navMenu {
+  list-style: none;
+}
+.desktopMenuListItem,
+.listItem {
   cursor: pointer;
   margin: 1rem;
   font-size: 1.2rem;
   transition: 0.2s linear;
   color: white;
 }
-.desktopMenuListItem:hover {
+.desktopMenuListItem:hover,
+.listItem:hover {
   color: yellow;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid yellow;
@@ -68,4 +77,54 @@
   height: 2rem;
   border-radius: 100%;
   margin-top: 0.2rem;
+}
+.react-icons {
+  display: none;
+}
+
+/* mobile */
+.navMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background-color: rgb(40, 40, 40);
+  border-radius: 1rem;
+  gap: 1rem;
+}
+.mobMenu {
+  font-size: 2rem;
+  display: none;
+}
+.navMenu li {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  margin: 0.2rem;
+  background-color: rgb(30, 30, 30);
+}
+.listItem {
+  padding: 0 5rem;
+}
+
+/* media query */
+
+@media screen and (max-width: 600px) {
+  .mobMenu {
+    display: flex;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+  .contactLink {
+    display: none;
+  }
+  .lightDarkMode {
+    margin-left: 15rem;
+  }
 }

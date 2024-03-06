@@ -25,7 +25,7 @@ const Hero = () => {
           </button>
         </Link>
       </div>
-      <div>
+      <div className="portfolio-image">
         <img src={"./images/portfolio.png"} alt="Profile" className="bg" />
       </div>
     </section>

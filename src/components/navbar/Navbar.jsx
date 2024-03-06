@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
+import DarkMode from "../DarkMode/DarkMode";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <nav className="navbar">
       <div className="logo">
@@ -11,31 +15,92 @@ const Navbar = () => {
           <i class="fa-solid fa-code"></i>
         </span>
       </div>
-      <div className="desktopMenu">
-        <Link to="/" className="desktopMenuListItem">
-          Home
-        </Link>
-        <Link to="/about" className="desktopMenuListItem">
-          About
-        </Link>
-        <Link to="/skills" className="desktopMenuListItem">
-          Skills
-        </Link>
-        <Link to="/myprojects" className="desktopMenuListItem">
-          Projects
-        </Link>
-      </div>
+      <ul className="desktopMenu">
+        <li>
+          <Link to="/" className="desktopMenuListItem">
+            Home
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link to="/about" className="desktopMenuListItem">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/skills" className="desktopMenuListItem">
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link to="/myprojects" className="desktopMenuListItem">
+            Projects
+          </Link>
+        </li>
+        <FaTimes className="react-icons" />
+      </ul>
+      <GiHamburgerMenu className="react-icons" />
       <div className="desktopMenuBtn">
-        <button className="lightDarkMode">
-          <i class="fa-solid fa-sun"></i>
-        </button>
-        <button className="desktopMenuButton">
-          Contact
-          <span>
-            <i class="fa-regular fa-message"></i>
-          </span>
+        <DarkMode />
+        <button className="desktopMenuButton contactLink">
+          <Link to="/contact">
+            Contact
+            <span>
+              <i class="fa-regular fa-message"></i>
+            </span>
+          </Link>
         </button>
       </div>
+      {/* mobile */}
+      <GiHamburgerMenu
+        className="mobMenu"
+        onClick={() => setShowMenu(!showMenu)}
+      />
+      <ul className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
+        <li>
+          <Link to="/" className="listItem" onClick={() => setShowMenu(false)}>
+            Home
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link
+            to="/about"
+            className="listItem"
+            onClick={() => setShowMenu(false)}
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/skills"
+            className="listItem"
+            onClick={() => setShowMenu(false)}
+          >
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/myprojects"
+            className="listItem"
+            onClick={() => setShowMenu(false)}
+          >
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/contact"
+            className="listItem"
+            onClick={() => setShowMenu(false)}
+          >
+            Contact
+          </Link>
+        </li>
+        <FaTimes className="react-icons" />
+      </ul>
     </nav>
   );
 };

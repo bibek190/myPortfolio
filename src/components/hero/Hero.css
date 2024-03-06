@@ -9,6 +9,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   overflow: hidden;
+  padding-bottom: 3rem;
 }
 
 .heroContent {
@@ -51,12 +52,16 @@
   gap: 0.4rem;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 600px) {
   .heroContent {
     width: 100%;
     padding: 0 auto;
     text-align: center;
-    height: 90vh;
+    height: 85vh;
+    padding-top: -4rem;
+  }
+  .portfolio-image {
+    display: none;
   }
   .btn-link {
     display: flex;

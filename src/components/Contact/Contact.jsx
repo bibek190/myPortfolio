@@ -9,10 +9,11 @@ const Contact = () => {
   return (
     <section className="contact">
       <h2>Get In Touch</h2>
-      <hr />
+
       <div className="contact-box">
         <div className="contact-left">
           <h2>Contact Me</h2>
+          <hr />
           <p>
             <span>
               <SiGmail />
@@ -43,7 +44,7 @@ const Contact = () => {
               placeholder="Your Message"
               required
             ></textarea>
-            <button>Submit</button>
+            <button className="btn btn2">Submit</button>
           </form>
         </div>
       </div>
