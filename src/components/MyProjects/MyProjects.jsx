@@ -17,7 +17,7 @@ const MyProjects = () => {
               voluptate beatae dolorem commodi. Repellat ut voluptatibus magnam
               at harum.
             </p>
-            <NavLink to="https://github.com/bibek190/Digital-Books-Library">
+            <NavLink to="https://digital-books-library.vercel.app/">
               <FaExternalLinkAlt />
             </NavLink>
           </div>
@@ -45,7 +45,7 @@ const MyProjects = () => {
               voluptate beatae dolorem commodi. Repellat ut voluptatibus magnam
               at harum.
             </p>
-            <NavLink to="https://github.com/bibek190/travel-baggage-list">
+            <NavLink to="https://travel-baggage-list.vercel.app/">
               <FaExternalLinkAlt />
             </NavLink>
           </div>
