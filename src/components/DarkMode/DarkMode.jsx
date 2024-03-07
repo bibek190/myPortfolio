@@ -4,7 +4,7 @@ import { FaMoon } from "react-icons/fa";
 import { CiSun } from "react-icons/ci";
 
 const DarkMode = () => {
-  const [theme, setTheme] = useState("light-theme");
+  const [theme, setTheme] = useState("dark-theme");
   const toggleTheme = () => {
     if (theme === "dark-theme") {
       setTheme("light-theme");

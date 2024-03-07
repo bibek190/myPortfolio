@@ -128,6 +128,12 @@
     display: flex;
   }
 
+  .navMenu {
+    /* background: linear-gradient(rgb(51, 51, 51), rgb(55, 55, 55)); */
+    margin-top: 2rem;
+    font-size: 2.5rem;
+  }
+
   .desktopMenu {
     display: none;
   }
@@ -135,6 +141,6 @@
     display: none;
   }
   .lightDarkMode {
-    margin-left: 15rem;
+    margin-left: 10rem;
   }
 }
