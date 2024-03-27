@@ -8,6 +8,8 @@ import MyProjects from "./components/MyProjects/MyProjects";
 import Navbar from "./components/navbar/Navbar";
 import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
@@ -21,6 +23,7 @@ const App = () => {
         <Route path="/myprojects" element={<MyProjects />} />
         <Route path="/*" element={<NoPage />} />
       </Routes>
+      <ToastContainer />
     </BrowserRouter>
   );
 };
