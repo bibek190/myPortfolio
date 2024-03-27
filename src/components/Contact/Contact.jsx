@@ -30,7 +30,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-right">
-          <form action="" className="contact-form">
+          <form
+            action="https://formsubmit.co/bibek9818917036@gmail.com"
+            method="POST"
+            className="contact-form"
+          >
             <input type="text" name="Name" placeholder="Your Name" required />
             <input
               type="email"

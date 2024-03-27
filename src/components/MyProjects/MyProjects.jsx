@@ -4,66 +4,50 @@ import { Link, NavLink } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const MyProjects = () => {
+  const projects = [
+    {
+      img: "./images/digital-library.png",
+      name: "Digital Library",
+      link: "https://digital-books-library.vercel.app/",
+    },
+    {
+      img: "./images/e-commerce.png",
+      name: "E-commerce",
+      link: "https://github.com/bibek190/second-ecommerce",
+    },
+    {
+      img: "./images/travel-bag.png",
+      name: "Travel-bag",
+      link: "https://travel-baggage-list.vercel.app/",
+    },
+    {
+      img: "./images/movie-search.png",
+      name: "Movie Search",
+      link: "https://github.com/bibek190/Movie-search-react",
+    },
+  ];
   return (
     <section className="myProjects">
       <h2 className="myProject-title">My Projects</h2>
       <div className="project-container">
-        <div className="project-box ">
-          <img src="./images/digital-library.png" alt="" />
-          <div className="project-content">
-            <h4>Digital Library</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis
-              voluptate beatae dolorem commodi. Repellat ut voluptatibus magnam
-              at harum.
-            </p>
-            <NavLink to="https://digital-books-library.vercel.app/">
-              <FaExternalLinkAlt />
-            </NavLink>
-          </div>
-        </div>
-        <div className="project-box">
-          <img src="./images/e-commerce.png" alt="" />
-          <div className="project-content">
-            <h4>E-commerce</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis
-              voluptate beatae dolorem commodi. Repellat ut voluptatibus magnam
-              at harum.
-            </p>
-            <NavLink to="https://github.com/bibek190/second-ecommerce">
-              <FaExternalLinkAlt />
-            </NavLink>
-          </div>
-        </div>
-        <div className="project-box">
-          <img src="./images/travel-bag.png" alt="" />
-          <div className="project-content">
-            <h4>Travel list</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis
-              voluptate beatae dolorem commodi. Repellat ut voluptatibus magnam
-              at harum.
-            </p>
-            <NavLink to="https://travel-baggage-list.vercel.app/">
-              <FaExternalLinkAlt />
-            </NavLink>
-          </div>
-        </div>
-        <div className="project-box">
-          <img src="./images/movie-search.png" alt="" />
-          <div className="project-content">
-            <h4>Search Movie</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis
-              voluptate beatae dolorem commodi. Repellat ut voluptatibus magnam
-              at harum.
-            </p>
-            <NavLink to="https://github.com/bibek190/Movie-search-react">
-              <FaExternalLinkAlt />
-            </NavLink>
-          </div>
-        </div>
+        {projects.map(({ img, name, link }) => {
+          return (
+            <div className="project-box ">
+              <img src={img} alt="" />
+              <div className="project-content">
+                <h4>{name}</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  omnis voluptate beatae dolorem commodi. Repellat ut
+                  voluptatibus magnam at harum.
+                </p>
+                <NavLink to={link}>
+                  <FaExternalLinkAlt />
+                </NavLink>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

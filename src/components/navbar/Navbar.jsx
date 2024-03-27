@@ -8,6 +8,25 @@ import DarkMode from "../DarkMode/DarkMode";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  const links = [
+    {
+      linkTo: "/",
+      name: "Home",
+    },
+    {
+      linkTo: "/about",
+      name: "About",
+    },
+    {
+      linkTo: "/skills",
+      name: "Skills",
+    },
+    {
+      linkTo: "/myprojects",
+      name: "Projects",
+    },
+  ];
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -17,27 +36,15 @@ const Navbar = () => {
         </span>
       </div>
       <ul className="desktopMenu">
-        <li>
-          <Link to="/" className="desktopMenuListItem">
-            Home
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link to="/about" className="desktopMenuListItem">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="/skills" className="desktopMenuListItem">
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link to="/myprojects" className="desktopMenuListItem">
-            Projects
-          </Link>
-        </li>
+        {links.map(({ linkTo, name }) => {
+          return (
+            <li>
+              <Link to={linkTo} className="desktopMenuListItem">
+                {name}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
 
       <div className="desktopMenuBtn">
@@ -60,39 +67,19 @@ const Navbar = () => {
       )}
 
       <ul className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
-        <li>
-          <Link to="/" className="listItem" onClick={() => setShowMenu(false)}>
-            Home
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link
-            to="/about"
-            className="listItem"
-            onClick={() => setShowMenu(false)}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/skills"
-            className="listItem"
-            onClick={() => setShowMenu(false)}
-          >
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/myprojects"
-            className="listItem"
-            onClick={() => setShowMenu(false)}
-          >
-            Projects
-          </Link>
-        </li>
+        {links.map(({ linkTo, name }) => {
+          return (
+            <li>
+              <Link
+                to={linkTo}
+                className="listItem"
+                onClick={() => setShowMenu(false)}
+              >
+                {name}
+              </Link>
+            </li>
+          );
+        })}
         <li>
           <Link
             to="/contact"
